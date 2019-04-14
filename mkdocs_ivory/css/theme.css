@@ -1,0 +1,316 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: san-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: san-serif;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+ul {
+  padding: 0px;
+  list-style-type: none;
+}
+
+.site-name {
+  display: inline-block;
+  color: #ddd;
+  font-weight: bold;
+}
+
+.site-name::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f015";
+}
+
+.nav {
+  position: fixed;
+  top: 80px;
+  height: calc(100% - 120px);
+  background: #333;
+  overflow-y: auto;
+}
+
+.nav-item {
+  display: block;
+  position: relative;
+  font-size: 0.9rem;
+  padding: 2px 5px 2px 2px;
+}
+
+.nav-item.section {
+  font-weight: bold;
+  color: #66b;
+  width: 100%;
+  text-align: left;
+}
+
+.nav-item.section:hover {
+  background: #668;
+  color: #33a;
+}
+
+a.nav-item {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  color: #999;
+}
+
+a.nav-item.current,
+a.nav-item.current:hover {
+  color: #333;
+  background: #eee;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+a.nav-item:hover {
+  background: #666;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+
+.subnav.hide {
+  display: none;
+}
+
+.nav-item::before {
+  position: absolute;
+  text-align: center;
+  width: 15px;
+  top: 1px;
+}
+
+.nav-item.section::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f107";
+  top: 3px;
+}
+
+.nav-item.section.hide::before {
+  content: "\f105";
+}
+
+a.nav-item::before {
+  content: "\2022";
+}
+
+.toctree-l1>.nav-item {
+  padding-left: 20px;
+}
+
+.toctree-l1>.nav-item::before {
+  left: 5px;
+}
+
+.toctree-l1>a.nav-item::before {
+  content: "";
+}
+
+.toctree-l2>.nav-item {
+  padding-left: 30px;
+}
+
+.toctree-l2>.nav-item::before {
+  left: 15px;
+}
+
+.toctree-l3>.nav-item {
+  padding-left: 40px;
+}
+
+.toctree-l3>.nav-item::before {
+  left: 25px;
+}
+
+.toctree-l4 .nav-item {
+  padding-left: 50px;
+}
+
+.toctree-l4>.nav-item::before {
+  left: 35px;
+}
+
+.version {
+  display: flex;
+  background: #222;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  align-items: center;
+}
+
+.version div {
+  padding: 0 10px;
+}
+
+.version div:nth-child(1) {
+  margin-right: auto;
+}
+
+.version a {
+  color: #ddd;
+  font-size: 14px;
+}
+
+#content {
+  margin: 10px 35px;
+}
+
+.breadcrumbs {
+  margin: 10px 35px;
+}
+
+.breadcrumbs li {
+  font-size: 0.9rem;
+  display: inline;
+}
+
+.footer-buttons {
+  position: relative;
+  height: 2.5rem;
+  margin: 10px 35px;
+}
+
+.footer-buttons .previous {
+  position: absolute;
+  left: 0;
+  margin: auto;
+}
+
+.footer-buttons .next {
+  position: absolute;
+  right: 0;
+}
+
+.footer-buttons a {
+  display: inline-block;
+  color: #888;
+  background: #eee;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.footer-buttons span::after,
+.footer-buttons span::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  color: #888;
+}
+
+.footer-buttons .previous span::before {
+  margin-right: 6px;
+  content: "\f359";
+}
+
+.footer-buttons .next span::after {
+  margin-left: 6px;
+  content: "\f35a";
+}
+
+.footer-note {
+  display: flex;
+  font-size: 0.9rem;
+  color: #aaa;
+  height: 40px;
+  border-top: 1px solid #ccc;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-note a {
+  color: #88d;
+}
+
+/**************************************/
+/* layout                             */
+/**************************************/
+#container {
+  display: flex;
+}
+
+aside {
+  flex: 0 0 300px;
+  width: 300px;
+  order: 1;
+}
+
+aside>* {
+  width: inherit;
+}
+
+.home, .home-top {
+  display: flex;
+  background: #48c;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.home {
+  position: fixed;
+  top: 0;
+}
+
+main {
+  flex: 1 1 300px;
+  order: 2;
+  min-width: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  html.show {
+    overflow-y: hidden;
+  }
+
+  aside {
+    display: none;
+  }
+
+  aside.show {
+    display: block;
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .home-top {
+    position: relative;
+  }
+
+  .site-name.hide {
+    display: none;
+  }
+
+  .hamburger {
+    position: absolute;
+    left: 20px;
+  }
+
+  .hamburger::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9";
+    font-weight: bold;
+    color: #ddd;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-top {
+    display: none;
+  }
+}

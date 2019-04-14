@@ -1,0 +1,5 @@
+recursive-include mkdocs_ivory *.ico *.js *.css *.html *.yml
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+include README.md
+include LICENSE
