@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: san-serif;
+  font-family: Lato, san-serif;
 }
 
 a {
@@ -12,7 +12,7 @@ a {
 }
 
 button {
-  font-family: san-serif;
+  font-family: Lato, san-serif;
   cursor: pointer;
   border: none;
   background: transparent;
@@ -47,7 +47,7 @@ ul {
   display: block;
   position: relative;
   font-size: 0.9rem;
-  padding: 2px 5px 2px 2px;
+  line-height: 1.6em;
 }
 
 .nav-item.section {
@@ -90,13 +90,11 @@ a.nav-item:hover {
   position: absolute;
   text-align: center;
   width: 15px;
-  top: 1px;
 }
 
 .nav-item.section::before {
   font-family: "Font Awesome 5 Free";
   content: "\f107";
-  top: 3px;
 }
 
 .nav-item.section.hide::before {
@@ -105,6 +103,11 @@ a.nav-item:hover {
 
 a.nav-item::before {
   content: "\2022";
+  color: #777;
+}
+
+a.nav-item.current::before {
+  color: #444;
 }
 
 .toctree-l1>.nav-item {
