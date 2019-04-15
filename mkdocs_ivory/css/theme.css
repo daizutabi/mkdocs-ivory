@@ -7,12 +7,37 @@ body {
   font-family: Lato, san-serif;
 }
 
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+}
+
+h6 {
+  font-size: 1.0rem;
+}
+
 a {
   text-decoration: none;
 }
 
 button {
   font-family: Lato, san-serif;
+  font-size: 1rem;
   cursor: pointer;
   border: none;
   background: transparent;
@@ -33,14 +58,6 @@ ul {
 .site-name::before {
   font-family: "Font Awesome 5 Free";
   content: "\f015";
-}
-
-.nav {
-  position: fixed;
-  top: 80px;
-  height: calc(100% - 120px);
-  background: #333;
-  overflow-y: auto;
 }
 
 .nav-item {
@@ -146,15 +163,6 @@ a.nav-item.current::before {
   left: 35px;
 }
 
-.version {
-  display: flex;
-  background: #222;
-  position: fixed;
-  bottom: 0;
-  height: 40px;
-  align-items: center;
-}
-
 .version div {
   padding: 0 10px;
 }
@@ -166,10 +174,6 @@ a.nav-item.current::before {
 .version a {
   color: #ddd;
   font-size: 14px;
-}
-
-#content {
-  margin: 10px 35px;
 }
 
 .breadcrumbs {
@@ -249,6 +253,7 @@ aside {
   flex: 0 0 300px;
   width: 300px;
   order: 1;
+  background: #333;
 }
 
 aside>* {
@@ -260,12 +265,26 @@ aside>* {
   background: #48c;
   align-items: center;
   justify-content: center;
-  height: 80px;
 }
 
 .home {
   position: fixed;
   top: 0;
+}
+
+.nav {
+  position: fixed;
+  overflow-y: auto;
+  background: #333;
+}
+
+.version {
+  display: flex;
+  background: #222;
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+  align-items: center;
 }
 
 main {
@@ -290,8 +309,17 @@ main {
     width: 100%;
   }
 
+  .home, .home-top {
+    height: 40px;
+  }
+
   .home-top {
     position: relative;
+  }
+
+  .nav {
+    top: 40px;
+    height: calc(100% - 80px);
   }
 
   .site-name.hide {
@@ -310,10 +338,27 @@ main {
     color: #ddd;
     font-size: 1.3rem;
   }
+
+  #content {
+    margin: 10px 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .home-top {
     display: none;
+  }
+
+  .home {
+    height: 80px;
+  }
+
+  .nav {
+    top: 80px;
+    height: calc(100% - 120px);
+  }
+
+  #content {
+    margin: 10px 35px;
   }
 }
