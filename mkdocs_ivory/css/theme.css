@@ -7,30 +7,6 @@ body {
   font-family: Lato, san-serif;
 }
 
-h1 {
-  font-size: 1.75rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-h3 {
-  font-size: 1.25rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-}
-
-h5 {
-  font-size: 1.1rem;
-}
-
-h6 {
-  font-size: 1.0rem;
-}
-
 a {
   text-decoration: none;
 }
@@ -176,10 +152,6 @@ a.nav-item.current::before {
   font-size: 14px;
 }
 
-.breadcrumbs {
-  margin: 10px 35px;
-}
-
 .breadcrumbs li {
   font-size: 0.9rem;
   display: inline;
@@ -188,7 +160,6 @@ a.nav-item.current::before {
 .footer-buttons {
   position: relative;
   height: 2.5rem;
-  margin: 10px 35px;
 }
 
 .footer-buttons .previous {
@@ -342,6 +313,42 @@ main {
   #content {
     margin: 10px 15px;
   }
+
+  .breadcrumbs {
+    margin: 10px 15px;
+  }
+
+  .footer-buttons {
+    margin: 10px 15px;
+  }
+
+  .footer-note {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4 {
+    font-size: 1.15rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    font-size: 1.0rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -360,5 +367,37 @@ main {
 
   #content {
     margin: 10px 35px;
+  }
+
+  .breadcrumbs {
+    margin: 10px 35px;
+  }
+
+  .footer-buttons {
+    margin: 10px 35px;
+  }
+
+  h1 {
+    font-size: 1.65rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+  }
+
+  h6 {
+    font-size: 1.0rem;
   }
 }
