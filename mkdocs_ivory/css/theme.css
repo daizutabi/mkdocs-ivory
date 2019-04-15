@@ -39,13 +39,13 @@ ul {
 .nav-item {
   display: block;
   position: relative;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.6em;
 }
 
 .nav-item.section {
   font-weight: bold;
-  color: #77f;
+  color: #bbf;
   width: 100%;
   text-align: left;
 }
@@ -55,31 +55,38 @@ ul {
   color: #33a;
 }
 
+.nav-item.section.hide {
+  color: #aaf;
+}
+
+.nav-item.section.hide:hover {
+  background: #668;
+  color: #33a;
+}
+
 a.nav-item {
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
   color: #999;
 }
 
-a.nav-item.current,
-a.nav-item.current:hover {
+a.nav-item.current {
   color: #333;
   background: #eee;
-  border-top: 1px solid #aaa;
-  border-bottom: 1px solid #aaa;
+}
+
+a.nav-item.current:hover {
+  color: #333;
+  background: #bbb;
 }
 
 a.nav-item:hover {
   background: #666;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
 }
 
 .subnav.hide {
   display: none;
 }
 
-.nav-item::before {
+.nav-item.section::before {
   position: absolute;
   text-align: center;
   width: 15px;
@@ -94,6 +101,7 @@ a.nav-item:hover {
   content: "\f105";
 }
 
+/*
 a.nav-item::before {
   content: "\2022";
   color: #777;
@@ -102,7 +110,7 @@ a.nav-item::before {
 a.nav-item.current::before {
   color: #444;
 }
-
+ */
 .toctree-l1>.nav-item {
   padding-left: 20px;
 }
@@ -159,8 +167,6 @@ a.nav-item.current::before {
   background: #ccc;
   color: #555;
   border: none;
-  /* border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc; */
 }
 
 .nav-item.toc:hover {
@@ -168,7 +174,6 @@ a.nav-item.current::before {
   color: #555;
   border: none;
 }
-
 
 .version div {
   padding: 0 10px;
