@@ -131,13 +131,44 @@ a.nav-item.current::before {
   left: 25px;
 }
 
-.toctree-l4 .nav-item {
+.toctree-l4>.nav-item {
   padding-left: 50px;
 }
 
 .toctree-l4>.nav-item::before {
   left: 35px;
 }
+
+.toctree-l5>.nav-item {
+  padding-left: 55px;
+}
+
+.toctree-l5>.nav-item::before {
+  left: 40px;
+}
+
+.toctree-l6>.nav-item {
+  padding-left: 60px;
+}
+
+.toctree-l6>.nav-item::before {
+  left: 45px;
+}
+
+.nav-item.toc {
+  background: #ccc;
+  color: #555;
+  border: none;
+  /* border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; */
+}
+
+.nav-item.toc:hover {
+  background: #bbb;
+  color: #555;
+  border: none;
+}
+
 
 .version div {
   padding: 0 10px;

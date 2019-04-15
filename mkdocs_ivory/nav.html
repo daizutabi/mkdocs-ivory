@@ -1,5 +1,9 @@
 {%- if nav_item.is_section %}
   <button class="section nav-item{% if navlevel > 1 and not nav_item.active %} hide{% endif %}">{{ nav_item.title }}</button>
+{%- elif nav_item.toc -%}
+  {% for toc_item in nav_item.toc %}
+  <a class="nav-item{% if nav_item.active %} current{%endif%}" href="{{ nav_item.url|url }}">{{ toc_item.title }}</a>
+  {%- endfor -%}
 {%- else %}
   <a class="nav-item{% if nav_item.active %} current{%endif%}" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
 {%- endif %}

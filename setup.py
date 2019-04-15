@@ -3,7 +3,7 @@ import sys
 
 from setuptools import find_packages, setup
 
-__version__ = "0.1.3"
+__version__ = "0.1.4"
 
 
 if sys.argv[-1] == "publish":
