@@ -44,24 +44,14 @@ ul {
 }
 
 .nav-item.section {
-  font-weight: bold;
-  color: #bbf;
+  color: #ddd;
   width: 100%;
   text-align: left;
 }
 
 .nav-item.section:hover {
-  background: #668;
-  color: #33a;
-}
-
-.nav-item.section.hide {
-  color: #aaf;
-}
-
-.nav-item.section.hide:hover {
-  background: #668;
-  color: #33a;
+  background: #999;
+  color: #333;
 }
 
 a.nav-item {
@@ -89,11 +79,12 @@ a.nav-item:hover {
 .nav-item.section::before {
   position: absolute;
   text-align: center;
-  width: 15px;
+  width: 5px;
 }
 
 .nav-item.section::before {
   font-family: "Font Awesome 5 Free";
+  font-weight: bold;
   content: "\f107";
 }
 
