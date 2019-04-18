@@ -258,8 +258,8 @@ a.nav-item:hover {
 }
 
 aside {
-  flex: 0 0 300px;
-  width: 300px;
+  flex: 0 0 350px;
+  width: 350px;
   order: 1;
   background: #333;
 }
@@ -403,15 +403,15 @@ main {
   }
 
   #content {
-    margin: 10px 35px;
+    margin: 10px 50px;
   }
 
   .breadcrumbs {
-    margin: 10px 35px;
+    margin: 10px 50px;
   }
 
   .footer-buttons {
-    margin: 10px 35px;
+    margin: 10px 50px;
   }
 
   h1 {
