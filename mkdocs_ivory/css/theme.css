@@ -20,7 +20,8 @@ button {
   outline: none;
 }
 
-ul {
+.nav ul,
+.breadcrumbs ul {
   padding: 0px;
   list-style-type: none;
 }
