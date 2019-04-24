@@ -1,10 +1,25 @@
+html {
+  font-size: 16px;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
+body, button {
+  font-family: Lato, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: Lato, san-serif;
+}
+
+code {
+  font-family: "Fira Code", "Courier New", Consolas, monospace;
+}
+
+pre code {
+  font-size: 0.8rem;
 }
 
 a {
@@ -12,7 +27,6 @@ a {
 }
 
 button {
-  font-family: Lato, san-serif;
   font-size: 1rem;
   cursor: pointer;
   border: none;
