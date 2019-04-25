@@ -277,6 +277,7 @@ aside {
   width: 350px;
   order: 1;
   background: #333;
+  z-index: 999;
 }
 
 aside>* {
@@ -310,9 +311,14 @@ aside>* {
   align-items: center;
 }
 
+#spacer {
+  flex: 0 0 22px;
+  order: 2;
+}
+
 main {
   flex: 1 1 300px;
-  order: 2;
+  order: 3;
   min-width: 0;
   overflow: hidden;
 }
@@ -340,18 +346,9 @@ main {
     position: relative;
   }
 
-  .nav {
-    top: 40px;
-    height: calc(100% - 80px);
-  }
-
-  .site-name.hide {
-    display: none;
-  }
-
   .hamburger {
     position: absolute;
-    left: 15px;
+    right: 15px;
   }
 
   .hamburger::before {
@@ -362,15 +359,20 @@ main {
     font-size: 1.3rem;
   }
 
-  #content {
-    margin: 10px 15px;
+  .nav {
+    top: 40px;
+    height: calc(100% - 80px);
   }
 
-  .breadcrumbs {
-    margin: 10px 15px;
+  .site-name.hide {
+    display: none;
   }
 
-  .footer-buttons {
+  #spacer {
+    display: none;
+  }
+
+  #main {
     margin: 10px 15px;
   }
 
@@ -417,16 +419,49 @@ main {
     height: calc(100% - 120px);
   }
 
-  #content {
-    margin: 10px 50px;
+  #main {
+    margin: 10px 50px 10px 30px;
   }
 
-  .breadcrumbs {
-    margin: 10px 50px;
+  .hamburger {
+    display: none;
   }
 
-  .footer-buttons {
-    margin: 10px 50px;
+  .arrow {
+    position: fixed;
+    top: calc(50% - 16px);
+    bottom: calc(50% - 16px);
+    border: 1px solid #eee;
+    border-radius: 0px 14px 14px 0px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 2px;
+    width: 20px;
+    margin-left: -10px;
+    transition: 0.3s ease 0s;
+  }
+
+  .arrow::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f053";
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .arrow.hide::before {
+    content: "\f054";
+  }
+
+  .arrow:hover {
+    background: #555;
+    color: #ddd;
+    border-color: #555;
+    margin-left: 0px;
+  }
+
+  aside.hide {
+    display: none;
   }
 
   h1 {

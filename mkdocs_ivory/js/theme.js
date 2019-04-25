@@ -11,6 +11,11 @@ function ready() {
     $('aside').toggleClass("show");
     $('.home-top .site-name').toggleClass("hide");
   });
+
+  $('.arrow').click(function(e) {
+    $('aside').toggleClass("hide");
+    $(this).toggleClass("hide");
+  });
 }
 
 $(ready);

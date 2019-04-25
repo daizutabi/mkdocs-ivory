@@ -76,15 +76,17 @@
       </nav>
       {% include "version.html" %}
     </aside>
-
+    <div id="spacer"><button class="arrow"></button></div>
     <main>
       <div class="home-top">
         <button class="hamburger"></button>
         <a href="{{ nav.homepage.url|url }}" class="site-name"> {{ config.site_name }}</a>
       </div>
-      <nav class="breadcrumbs">{% include "breadcrumbs.html" %}</nav>
-      {% block content %}<div id="content">{{ page.content }}</div>{% endblock %}
-      {% block footer %}{% include "footer.html" %}{% endblock %}
+      <div id="main">
+        <nav class="breadcrumbs">{% include "breadcrumbs.html" %}</nav>
+        {% block content %}<div id="content">{{ page.content }}</div>{% endblock %}
+        {% block footer %}{% include "footer.html" %}{% endblock %}
+      </div>
     </main>
   </div>
   {%- block scripts %}
