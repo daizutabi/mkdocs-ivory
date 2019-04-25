@@ -53,7 +53,9 @@
     <aside>
       <div class="home">
         <button class="hamburger"></button>
+        {%- block home %}
         <a href="{{ nav.homepage.url|url }}" class="site-name"> {{ config.site_name }}</a>
+        {%- endblock %}
       </div>
       {%- if 'search' in config['plugins'] %}
       <div class="search">
