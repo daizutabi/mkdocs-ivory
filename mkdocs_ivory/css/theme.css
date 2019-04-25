@@ -439,6 +439,9 @@ main {
     width: 20px;
     margin-left: -10px;
     transition: 0.3s ease 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .arrow::before {
