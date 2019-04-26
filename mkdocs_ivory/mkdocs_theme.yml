@@ -1,4 +1,4 @@
-# Config options for 'readthedocs' theme
+# Config options for 'ivory' theme
 
 static_templates:
     - 404.html
