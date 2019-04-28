@@ -52,18 +52,21 @@
   <div id="container">
     <aside>
       <div class="home">
-        <button class="hamburger"></button>
-        {%- block home %}
-        <a href="{{ nav.homepage.url|url }}" class="site-name"> {{ config.site_name }}</a>
-        {%- endblock %}
+        <div class="title">
+          <button class="hamburger"></button>
+          <a href="{{ nav.homepage.url|url }}" class="site-name"> {{ config.site_name }}</a>
+        </div>
+        {%- if config.theme.version -%}
+        <div class="version">{{ config.theme.version }}</div>
+        {%- endif %}
+        {%- if 'search' in config['plugins'] %}
+        <div class="search">
+          {%- block search_button %}
+          {% include "searchbox.html" %}
+          {%- endblock %}
+        </div>
+        {%- endif %}
       </div>
-      {%- if 'search' in config['plugins'] %}
-      <div class="search">
-        {%- block search_button %}
-        {% include "searchbox.html" %}
-        {%- endblock %}
-      </div>
-      {%- endif %}
       <nav class="nav">
         {%- block site_nav %}
         <ul class="root">
@@ -76,7 +79,7 @@
         </ul>
         {%- endblock %}
       </nav>
-      {% include "version.html" %}
+      {% include "repo.html" %}
     </aside>
     <div id="spacer"><button class="arrow"></button></div>
     <main>
