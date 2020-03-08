@@ -97,9 +97,7 @@
         </main>
     </div>
     {%- block scripts %}
-    <script>
-        var base_url = '.';
-    </script>
+    <script>var base_url = '{{ base_url }}';</script>
     <script src="{{ 'js/theme.js'|url }}"></script>
     {%- for path in config['extra_javascript'] %}
     <script src="{{ path|url }}"></script>{% endfor %}
