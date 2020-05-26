@@ -49,6 +49,10 @@ img {
   height: auto;
 }
 
+ul {
+  line-height: 24px;
+}
+
 .nav ul,
 .breadcrumbs ul {
   padding: 0px;
