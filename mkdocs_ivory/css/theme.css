@@ -577,3 +577,54 @@ tr:last-child td, tr:last-child th {
 tbody tr:nth-child(2n+1) td {
   background: #fafafa;
 }
+
+.admonition {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+
+.admonition.note {
+  background: #F0F0FF;
+}
+
+.note p.admonition-title {
+  color: white;
+  background: #555599;
+  margin: 0px;
+  padding: 4px 8px;
+}
+
+.note p.admonition-title:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f303";
+  font-weight: 900;
+  padding-right: 5px;
+  color: white;
+}
+
+.admonition p {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 4px;
+}
+
+.admonition pre {
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.admonition code {
+  background: none;
+  font-size: 0.9rem;
+}
+
+/* .mkapi-section-name-warning:before,
+.mkapi-section-name-warnings:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f071";
+  font-weight: 900;
+  padding-right: 3px;
+  color: white;
+} */
