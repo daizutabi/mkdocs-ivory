@@ -5,4 +5,4 @@
 
 # Demo
 
-[Pheasant document](https://pheasant.daizutabi.net) is generated with the Ivory theme.
+[Pheasant documentation](https://pheasant.daizutabi.net) is generated with the Ivory theme.
