@@ -610,6 +610,25 @@ tbody tr:nth-child(2n+1) td {
   color: white;
 }
 
+.admonition.warning {
+  background: #FFEEEE;
+}
+
+.warning p.admonition-title {
+  color: white;
+  background: #FF6666;
+  margin: 0px;
+  padding: 4px 8px;
+}
+
+.warning p.admonition-title:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f071";
+  font-weight: 900;
+  padding-right: 5px;
+  color: white;
+}
+
 .admonition p {
   margin-top: 5px;
   margin-left: 10px;
