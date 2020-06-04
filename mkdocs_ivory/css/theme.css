@@ -31,12 +31,12 @@ p {
   margin-bottom: 0px;
 } */
 
-#content ul {
+main ul {
   margin-top: 0px;
   margin-bottom: 8px;
 }
 
-#content li {
+main li {
   margin-top: 4px;
   margin-bottom: 4px;
   line-height: 1.5;
