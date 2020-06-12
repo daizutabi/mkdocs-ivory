@@ -26,11 +26,6 @@ p {
   line-height: 1.65;
 }
 
-/* li p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-} */
-
 main ul {
   margin-top: 0px;
   margin-bottom: 8px;
@@ -650,12 +645,3 @@ tbody tr:nth-child(2n+1) td {
   background: none;
   font-size: 0.9rem;
 }
-
-/* .mkapi-section-name-warning:before,
-.mkapi-section-name-warnings:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f071";
-  font-weight: 900;
-  padding-right: 3px;
-  color: white;
-} */
