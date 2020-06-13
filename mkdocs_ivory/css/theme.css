@@ -16,6 +16,12 @@ body {
 
 code {
   font-family: "Fira Code", "Courier New", Consolas, monospace;
+  font-size: 0.83rem;
+  color: #7700FF;
+  border: 1px solid #E0E0E0;
+  padding: 1px 3px;
+  margin: 0px 1px;
+  background: white;
 }
 
 pre code {
@@ -23,7 +29,7 @@ pre code {
 }
 
 p {
-  line-height: 1.65;
+  line-height: 1.65rem;
 }
 
 main ul {
@@ -59,6 +65,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* ul, ol, dl {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+} */
 
 .nav ul,
 .breadcrumbs ul {
@@ -639,9 +652,4 @@ tbody tr:nth-child(2n+1) td {
 .admonition pre {
   margin-top: 5px;
   margin-left: 15px;
-}
-
-.admonition code {
-  background: none;
-  font-size: 0.9rem;
 }
