@@ -19,7 +19,8 @@ code {
   font-size: 0.83rem;
   color: #7700FF;
   border: 1px solid #E0E0E0;
-  padding: 1px 3px;
+  border-radius: 3px;
+  padding: 1px 4px;
   margin: 0px 1px;
   background: white;
 }
