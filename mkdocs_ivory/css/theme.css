@@ -473,11 +473,11 @@ main {
 
   .home .title {
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
   }
 
   .home .version {
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     color: #aaa;
   }
 
