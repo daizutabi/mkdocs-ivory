@@ -603,6 +603,7 @@ tbody tr:nth-child(2n+1) td {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 0px;
+  padding-bottom: 10px;
 }
 
 .admonition.note {
